@@ -1,0 +1,39 @@
+Big O notation 
+- Big O is a way to evaluate the time complexity of an algorith
+-essentioall we can find out how efficent our algorith is be evaluating its complexity
+-to determine the Big O of a given algorithm we must first find the Big O of each operation Involved
+	
+evaluating Big O rules
+	-Big O notation is usually used on functions that take in a parameter
+	-To evaluate Big o of the function we must look at our operations
+	-an operation that changes due to the size of the functions input, will have a variable of 'n'
+		-a loop; for i in array || for j in len(x) 
+		-nested loops (where both loops are 'n'); for I in array: for j in array:
+		
+
+	-if an operation stays the same no matter what 'n' is, that operation is a constant or equal to 1
+		-creating a new variable; num = 1
+		-basic return or print methods; return num || print(num)
+		-math function; num += 2 || num *= num
+		-assigning a variable inside a loop that changes; for i in array: num += i
+	-after evaluating the operations create a formula to represent the function
+	-then evaluate the sum of the created formula
+	-remove the constants from the sum if it contains a variable
+	-Big O of the function is represented as O(sum)
+	
+	**refer to foo.py for a basic understanding**
+
+
+-Big O notation is usually used to find the time complexity of recursion methods
+
+Common Big O notation
+	-Constant: O(1)
+	-Logarithmic: O(log n)
+	-Linear search: O(n)
+	-n log(n): O(n log(n)
+	-Quadratic: O(n^2)
+	-Exponetial: O(C^n)
+	-Factorial: O(n!)
+
+**refer to BigOex.py for examples of each notation above**
+	
