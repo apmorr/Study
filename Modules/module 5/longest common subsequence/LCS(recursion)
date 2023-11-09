@@ -1,0 +1,26 @@
+Longest Common Subsequence
+-LCS is the longest ordered list of characters that are shared between two strings
+
+-To find the LCS, we must compare the strings together
+-we are looking through both strings and creating a list of characters that both strings have, while keeping the sequence of the characters in order
+-the characters do not have to share indexes, but the must be the same characters, and come after the same characters
+-if there are 3 matching characters in strings x:123 and y:132
+-but one character comes before another in one string, and after another in the other, we cannot add both characters to the list
+
+
+example 1:
+S1 - a, b, c, d
+S2 - a, c, b, a, d
+
+Common Subsequences = ab, abd, acd, ad, cd
+Longest Common Subsequence = abd or acd
+
+example 2:
+x - 12345
+y - 132465
+
+CS = 1245, 1345
+LCS = 1245 or 1345
+
+-in example 2, even tho both strings had a 2 after a 1, the x string has the 2 before 3 and the y string has the 2 after the 3
+-therefore, because the characters dont appear in consecutive order, a common subsequence can not contain the string '123'

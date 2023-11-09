@@ -1,0 +1,54 @@
+-Stack is a type of data structure like a list or an array
+-a stack data structure organizes data on top of each other
+-it works using a last in first out (LIFO) principle
+    -this means that elements are added to the end (or top) of the stack and the last (or top) element is returned first
+    -the bottom of the stack is the first element in the list
+    -the top of the stack is the last element in the list
+
+-to create a stack data structure we must build it on top of an array or a list data structure
+    -an array will be easier to start with, but limits the maximum capacity of the Stack
+    -a list or linked list allows us to implement a stack that can shrink and grow as much as needed
+-once created the stack can only hold as many elements as the length of the array, unless you use a list
+-then we can create a pointer or integer variable that will help us keep track of what index in the array is the last element in the stack
+    -when we add or remove elements from our stack, we will use the pointer variable to keep track of where our stack ends
+-using this pointer it makes it easier to add and remove elements to and from the stack
+-when the stack is empty the pointer is set to -1
+
+Stack data structure methods
+-S.push() - adds a a element to the top of stack
+-S.pop() - removes a element from the top of the stack
+-S.peek() -  returns the top element without removing it from the stack
+-S.is_empty() - returns true if the stack does not contain elements
+-len(S) - returns the number of elements in Stack(S)
+
+**refer to Simple_Stack.py on how to simply create a stack using a list**
+**refer to stack.py on how to create a stack and the methods**
+**refer to List_Stack on how to create a Stack and all the methods and what they do**
+
+A
+
+-a queue is another type of data structure but instead it has two pointer variables and uses the First in First out (FIFO)
+    -the element inserted first in the list, is the element to be removed first
+-a queue data structure organizes data like a line of people
+-data is added to the back of the line, and data at the front of the line is removed first
+the two pointer variables in the queue data structure keep track of the front and back of the line
+-when the queue is empty both pointers are equal to zero
+-the first pointer always points to the first person in the queue and the second pointer always points to the space after the last person in the queue
+-when the pointer reaches the last element in the array, the pointer can be set to the start of the array instead trying to be set to outside the array
+    *remember the data structure can only fit as many elements as the length of the array, the pointers can not be the same value because that would tell us our queue is empty
+    *if the array is full you must create a new array and transfer all variables
+-when a element is added to the data structure, it is called enqueue, and when its removed its called dequeue
+
+Queue data structure methods
+-Q.enqueue(e) - adds e element to the back of the queue
+-Q.dequeue() - removes and returns the first element at the front of the queue(Q), error occurs if the queue is empty
+-Q.first() or Q.peek() - returns the element at the front of the queue(Q) without removing it, error occurs if queue is empty
+-Q.is_empty() - returns True if the queue is empty
+-len(Q) - returns the number of elements in queue(Q), implement this with the special method __len__
+
+**refer to simple_queue.py on how to simply create and manipulate a queue**
+**refer to List_Queue.py on how to create a basic queue class**
+**refer to Queue.py on how to create a more complicated queue class**
+
+A lazy delete is a way to write the deque method more efficiently
+

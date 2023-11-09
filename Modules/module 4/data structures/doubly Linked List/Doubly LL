@@ -1,0 +1,34 @@
+-a doubly Linked List is like the Singly Linked List except a little more complicated
+-the doubly linked List hold a collection of Nodes
+-each Node stores, the nodes data, the location to the next Node, and the location to the previous Node
+-the point of this is so you can iterate through the list from both sides
+-next refers to the next node
+-data refers to the current node
+-prev refers to the previous node
+
+
+doubly linked list implementation
+
+-class Node: - this class will create a new node and assign the values to what we pass in
+
+    -self.data - data assigned to new node
+    -self.next - address or pointer value of the next node
+    -self.prev - address or pointer value of the previous node
+
+-class DoublyLinkedList: - this class will create our Linked List and allow us to manipulate and traverse it
+
+    -self.head - the variable that stores the address of the head node
+    -self.tail - the variable that stores the address of the last node
+    -self.head.next - the variable that stores the address node after the head node
+    -self.tail.prev - the variable that stores the address of the previous node
+
+
+
+
+            Head Node                                                                 Tail Node
+None <-->[prev||data||next] <--> [prev||data||next] <--> [prev||data||next] <--> [prev||data||next] <--> None
+
+None <-->[ None || A || :200: ] <--> [ :100: || B || :300: ] <--> [ :200: || C || :400: ] <--> [ :300: || D || None] <--> None
+                 :100:                        :200:                        :300:                        :400:
+
+

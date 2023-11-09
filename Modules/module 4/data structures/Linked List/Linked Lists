@@ -1,0 +1,54 @@
+-a Linked list is a data structure we will use to create a more efficient implementation of the ADT deque
+-Linked List is the data structure well use to try to get to O(1)
+    -we can already do this with a list, but it requires more memory for a lazy delete
+-The main idea of a Linked List is to not store all the data in a collection sequentially, but instead, to use nodes
+-a single node can store the data and the location of the next node
+
+Singly Linked List
+
+-the simplest form of a linked list
+-a Linked List is made up of nodes, each node contains data, and the address of the next node
+    -the address is also a pointer to the next node in the linked list
+-the first node is called the head node
+-the last node is called the tail node
+-the tail node can be determined by traversing the list and checking the nodes until the address of the next node is equal to 'None'
+-Linked lists and nodes have to be defined, which means we need a LinkedList class and a Node class
+
+
+
+Singly linked list implementation
+
+-class Node: - this class will create and assign the value we pass in and the address of the next node to a new node
+
+    -self.value - data assigned to new node
+    -self.next - address or pointer value of the next node, is set to None as default
+
+
+
+-class LinkedList: - this class will be where our linked list is created and manipulated using methods
+
+    -self.head - is a variable that points to the head node, is not the head node
+    -self.tail - is a variable that points to the tail node, is not the tail node
+    -node.next - the address/pointer/or location of the next node
+    -node.data - the data assigned to the given node
+
+    -addfirst() - adds a node to the front of the list and makes it the new head node
+    -addlast() - adds a new node to the end of the linked list and makes it the new tail node
+    -removefirst() - removes the first node and reassigns the head node
+    -removelast() - removes the last node and reassigns the tail node
+
+**refer to Linked_List.py for how to implement a Node class and LinkedList class**
+
+
+ Head Node                                                     Tail Node
+[data||address] --> [data||address] --> [data||address] --> [data||address] --> None
+ Head Node                                           Tail Node
+[ A || 250 ] --> [ B || 300 ] --> [ C || 450 ] --> [ D || None ] --> None
+
+
+-Now that our linked list has been implemented we can import it into our other files to make them more efficient
+-we can use our Linked List in a Queue class
+
+
+
+

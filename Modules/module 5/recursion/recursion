@@ -1,0 +1,30 @@
+recursive functions
+-recursion is a problem solving technique that involves breaking a problem into smaller instances of the same problem
+-until we get a small enough sub problem that has a trivial solution
+
+-an example of recursion would be something like factorials in math, 5! = 5+4+3+2+1 = 15
+
+-in code, recursions are typically created in a function that take in a input
+-each time the function is called it checks to see if a given condition is True
+-if the condition is not true, the function will change the input it takes in, and call itself with the new input
+-the function will continue to call itself, changing the input each time until the condition is met
+
+an example of a recursive function:
+
+def f(k):                   <-- takes in a input
+    if k == 0:              <-- checks to see if the condition is true, (this is the base critera)
+        return 0            <-- if it is, the function stops calling itself
+    else:
+        return f(k-1) + k   <-- when the condition is still not met, the function calls itself after changing the input,
+                                each time the function calls itself it gets closer to meeting the condition, (this is the recursive step)
+
+-the above function is recursive because until the function meets its base criteria
+ it continues to call itself and makes a recursive step toward meeting the condition
+
+
+-recursion is the technique of making a function call itself
+-it provides a way to break down complicated problems into simple, easier problems
+-some recursive algorithms are inefficient because they repeatedly make a recursive call to the same function with the exact same parameters
+-recursive code has a cleaner looking code
+-recursion makes it easier to code
+

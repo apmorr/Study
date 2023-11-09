@@ -1,0 +1,47 @@
+Sorting algorithms
+
+Bubble sort
+    +iterates over every pair in collection
+    +swaps out of ordered pairs
+    +after x iterations the last x item are in their final (sorted) places
+
+    **refer to bubble.py**
+
+selection sort
+    Main points:
+        +iterates over every unsorted item in collection
+        +selects the next smallest/biggest value
+        +after x iterations, the last x items are in their final (sorted) place
+
+    -selection sort is a way of sorting data in O(n^2) quadratic running time
+    -the idea is with every inner loop
+        -select the next smallest item and place it at the beginning
+        -select the next highest item and place it at the end
+    -selection sort always preforms at most O(n) swaps, no matter how the input list is arranged
+
+    -selection sort goes through all the objects in a list one by one
+        -it finds the smallest element in the unsorted list
+        -once the smallest element is found, it is move to the beggining of the list
+        -then the algorith goes through the list again to find the next smallest element
+    -basically it goes through the list once for every object in the list
+    -it will move each object one by one to where they need to be
+
+    **refer to selections.py**
+
+
+
+insertion sort
+    Main points:
+        +iterates over a progressively growing sorted section of the list
+        +bubbles the next un-sorted item into place
+        +after x iterations, the first x items are sorted but may NOT be in their final place
+
+    -another O(n^2) quadratic runtime algorithm
+    -easy to implement
+    -more efficient than bubble and selection sort algorithms
+        -selection sort is better for applications, where less numbers of write operations are required
+    -online algorithm - sort array as it receives data
+        -compare the current element with all its preceding elements
+        -if the current element is smaller than its preceding element, swap them
+
+    **refer to insertion.py**

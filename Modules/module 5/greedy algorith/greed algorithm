@@ -1,0 +1,10 @@
+greedy algorithm
+
+-a greedy algorith is an algorithmic strategy that makes the best optimal choice at each small stage with the goal of eventually leading to a globally optimum solution
+-this means the algorith picks the best solution at the best moment without concern of consequence
+-it picks the best immediate solution without considering the big picture, hence why its called greedy algorithm
+
+-although in many problems, a greedy strategy does not produce an optimal solution
+-the idea is to take the biggest possible step
+
+**refer too greed.py for a greedy algorith**

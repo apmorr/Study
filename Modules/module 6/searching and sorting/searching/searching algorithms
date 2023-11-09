@@ -1,0 +1,38 @@
+Searching algorithms
+    Summary:
+        -searching an unsorted list == O(n)
+        -searching a sorted list
+            == O(n) with inefficient recursive BS
+            == O(log n) with efficient recursive BS
+            == O(log n) with iterative BS
+
+
+Linear Search   #runtime is O(n)
+    -step through the array of objects, one at a time
+    -look for the item
+    -search stops when the item is found or has looked at all objects in the array
+
+    **refer to linear.py**
+
+
+
+
+Binary Search   #runtime is O(n)
+    -binary search is a commonly used as a recursive algorith
+    -if you are looking for an item in a list
+        -you break the list in half
+        -repeat search on whatever side is likely to have the missing element by comparing it to the median element
+    -then repeating on a smaller list is a single recursive call
+
+    **refer to binary.py**
+
+
+
+
+
+Tail recursion  #runtime is O(log n)
+    -is a recursive function in which the recursive call is the last statement that is executed by the function
+    -tail recursion can always be replaced by a loop
+    -the idea is to simply update the parameter variables and loop rather than making a recursive call
+
+    **refer to tail_recursion.py**

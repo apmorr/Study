@@ -1,0 +1,47 @@
+Divide and Conquer
+
+-divide and conquer is one of the several powerful techniques for algorithm design
+-DaC paradigm includes three steps
+    -DIVIDE the problem into subp problems (till a base case)
+    -CONQUER the sub problems by solving them recursively
+    -COMBINE sub problem solutions
+-often leads to efficient algorithms
+
+
+Mergesort algorithm
+    -DIVIDE  - split the list in half
+    -CONQUER - call merge sort on each half to sort them recursively
+    -COMBINE - merge both sorted halves into one sorted list
+
+    -split the collection into smaller collections (sub problems)
+    -sort the sub problems
+    -combine sub problems into a single collection
+
+    **refer to merge.py**
+
+
+
+Quick Sort
+    Big idea:
+        -pick some number to pivot (p) from the array
+        -move all numbers less than p to the beginning of the array
+        -move all numbers greater than (or equal to) p to the end of the array
+        -quicksort the numbers less than p
+        -quicksort the numbers greater than or equal to p
+        to put simply:
+            -pick a pivot
+            -then pivot
+                -smaller items to the left
+                -bigger to the right
+
+    -in quicksort we want to Divide and Conquer, but we want the combine step to be as quick as possible
+    -in quicksort the harder step is dividing
+    D-and-C:
+        -break into sub problems
+        -solve sub problems
+        -combine solutions
+
+    **refer to quick.py**
+
+
+

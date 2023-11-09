@@ -1,0 +1,14 @@
+
+-a Deque is a doubly ended queue
+
+-it acts both like a stack and a queue
+-a deque can store an ordered collection of items with the ability to add or remove items from both the begging and the end
+
+Deque ADT methods
+-D.addfirst(item) - adds an item to the front of the deque
+-D.addlast(item) - adds an item to the back of the deque
+-D.removefirst() - removes and returns the first item in the deque
+-D.removelast() - removes and returns the last item in the deque
+-len - returns the number of items in deque
+
+**refer to List_deque.py on how to iniialize a deque class

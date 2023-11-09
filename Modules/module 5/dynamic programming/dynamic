@@ -1,0 +1,30 @@
+Dynamic programming problem
+
+-DP is storing previously calculated values to prevent repetitive calculations and allow quick retrievals of the values
+-as well as using smaller values to solve for even larger ones
+
+
+there are two approches we can take to reach a solution:
+
+-Memorization(top-Down)
+    -write the recursive function top-down
+    -alter the function to check if weve already found the value
+    -if so use the precalculate value
+    -if not, do the recursive calls
+
+**refer to memo.py for a memorization algorith**
+
+-Tabulation(bottom-Up)
+    -start with solutions to the smallest problems then work you way up to the solutions of the bigger problems
+    -for fibonacci
+    -solve the small problems first
+        -fill in F[0], F[1]
+    -then bigger problems
+        -fill in F[2]
+    -...
+    -then bigger problems
+        -fill in F[n-1]
+    -then finally solve the real problem
+        -fill in F[n]
+
+
